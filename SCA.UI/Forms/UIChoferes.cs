@@ -35,8 +35,7 @@ namespace SCA.UI.Forms
                 string.IsNullOrEmpty(nombre) || 
                 string.IsNullOrWhiteSpace(apellido) ||
                 string.IsNullOrEmpty(apellido) || 
-                mtbCedula.MaskCompleted || 
-                mtbCedula.Text == string.Empty)
+                !mtbCedula.MaskCompleted)
             {
                 MessageBox.Show("Fields Requiered");
             }else
